@@ -39,7 +39,7 @@ function Set-RemoteDestkopSettings {
             $ADSIObject.PSBase.InvokeSet("BrokenConnectionAction", 1)
 
             ### Set Remote Desktop Services Profile settings ###
-            $ADSIObject.PSBase.InvokeSet("TerminalServicesProfilePath", "c:\profiles\user")
+            $ADSIObject.PSBase.InvokeSet("TerminalServicesProfilePath", "C:\profiles\user")
             $ADSIObject.PSBase.InvokeSet("TerminalServicesHomeDrive", "H:")
             $ADSIObject.PSBase.InvokeSet("TerminalServicesHomeDirectory", $($User.HomeDirectory))
             $ADSIObject.CommitChanges()
